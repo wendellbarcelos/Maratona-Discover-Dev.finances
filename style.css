@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+}
+
+header {
+    border: 1px solid black;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+main {
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.card {
+    border: 1px solid black;
+    margin: 10px;
+}
+
+footer {
+    border: 1px solid black;
+    text-align: center;
+}
