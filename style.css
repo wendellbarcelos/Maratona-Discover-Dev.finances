@@ -6,29 +6,38 @@
 }
 
 body {
+    font-family: 'Poppins', sans-serif;
+    background: #F1F7FA;
     width: 100%;
     max-width: 900px;
     margin: auto;
     position: relative;
 }
 
+.container {
+    width: 300px;
+    margin: auto;
+}
+
 header {
-    border: 1px solid black;
-    margin-bottom: 10px;
+    background: #026EA4;
+    padding: 2rem 0 10rem;
     text-align: center;
 }
 
-main {
-    border: 1px solid black;
-    margin-bottom: 10px;
+#logo {
+    color: #fff;
+    font-weight: 100;
+}
+
+.balance {
+
 }
 
 .card {
-    border: 1px solid black;
     margin: 10px;
 }
 
 footer {
-    border: 1px solid black;
     text-align: center;
 }
