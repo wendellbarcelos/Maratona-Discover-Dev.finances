@@ -1,3 +1,11 @@
+:root {
+    --color-blue: #026EA4;
+    --color-darkblue: #0F2E4C;
+    --color-white: #fff;
+    --color-bluelite: #d5f0fd;
+    --color-background: #ABB2B9;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -7,7 +15,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #F1F7FA;
+    background: var(--color-background);
     width: 100%;
     max-width: 900px;
     margin: auto;
@@ -15,27 +23,41 @@ body {
 }
 
 .container {
-    width: 300px;
+    width: min(90vw, 800px);
     margin: auto;
 }
 
+h2 {
+    margin-top: 3.2rem;
+    margin-bottom: 0.8rem;
+    color: var(--color-darkblue);
+    font-weight: normal;
+}
+
 header {
-    background: #026EA4;
+    background: var(--color-blue);
     padding: 2rem 0 10rem;
     text-align: center;
 }
 
 #logo {
-    color: #fff;
+    color: var(--color-white);
     font-weight: 100;
 }
 
-.balance {
+#balance {
+    margin-top: -5.5rem;
+}
 
+#balance h2 {
+    margin-top: 0;
+    color: var(--color-white);
 }
 
 .card {
-    margin: 10px;
+    background: var(--color-bluelite);
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
 }
 
 footer {
