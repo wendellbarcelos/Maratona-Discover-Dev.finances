@@ -51,7 +51,9 @@
         <section id="transaction">
             <h2 class="sr-only">Transação</h2>
 
-            <a href="#" class="button new">+ Nova Transação</a>
+            <a href="#" 
+               onclick="Modal.open()" 
+               class="button new">+ Nova Transação</a>
 
             <table id="data-table">
                 <thead>
@@ -64,44 +66,12 @@
                 </thead>
 
                 <tbody>
-                    <tr>
-                        <td class="description">Desenvolvimento de site</td>
-                        <td class="income">R$ 12.000,00</td>
-                        <td class="date">13/04/2020</td>
-                        <td>
-                            <img src="./assets/minus.svg" alt="Remover transação">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="description">Hamburguer</td>
-                        <td class="expense">- R$ 59,00</td>
-                        <td class="date">10/04/2020</td>
-                        <td>
-                            <img src="./assets/minus.svg" alt="Remover transação">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="description">Aluguel do apartamento</td>
-                        <td class="expense">- R$ 1.200,00</td>
-                        <td class="date">27/03/2020</td>
-                        <td>
-                            <img src="./assets/minus.svg" alt="Remover transação">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="description">Computador</td>
-                        <td class="income">R$ 5.400,00</td>
-                        <td class="date">15/03/2020</td>
-                        <td>
-                            <img src="./assets/minus.svg" alt="Remover transação">
-                        </td>
-                    </tr>
                 </tbody>
             </table>
         </section>
     </main>
 
-    <div class="modal-overlay active">
+    <div class="modal-overlay ">
         <div class="modal">
             <div class="form">
                 <h2>Nova Transação</h2>
@@ -141,7 +111,7 @@
                     </div>
 
                     <div class="input-group actions">
-                        <a href="#" class="button cancel">Cancelar</a>
+                        <a href="#" onclick="Modal.close()" class="button cancel">Cancelar</a>
                         <button>Salvar</button>
                     </div>
                     
@@ -149,11 +119,15 @@
             </div>
         </div>
     </div>
-
+    
     <footer>
         <p>2021 - Dev.finance$</p>
     </footer>
-
+    
+    <script src="./main.js">
+       
+    </script>
+    
 </body>
 
 </html>
